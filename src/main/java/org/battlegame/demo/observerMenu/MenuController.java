@@ -1,12 +1,13 @@
 package org.battlegame.demo.observerMenu;
 
-import org.battlegame.demo.gui.arq.OptionMenuContainer;
+import org.battlegame.demo.gui.build.OptionMenuContainer;
 import org.battlegame.demo.gui.utils.MenuRepo;
 
-public class CentralMenu {
-    private static final CentralMenu instance = new CentralMenu();
+public class MenuController {
+    private static final MenuController instance = new MenuController();
     private OptionMenuContainer currentMenuBehavior;
-    public CentralMenu() {
+    public MenuController() {
+
     }
 
     public void changeCurrentMenuBehavior(EMenu menu) {
@@ -17,7 +18,7 @@ public class CentralMenu {
         return currentMenuBehavior;
     }
 
-    public static CentralMenu getInstance() {
+    public static MenuController getInstance() {
         return instance;
     }
 }

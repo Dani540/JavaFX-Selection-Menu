@@ -1,18 +1,26 @@
 package org.battlegame.demo;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class GameApplication extends Application {
+    /**
+     * Clase punto de entrada, desde aquí llega el Stage principal y se le configura usando la clase Launcher
+     * @param stage Ventana principal inicial del programa
+     * @throws IOException Errores de lectura etc etc
+     */
     @Override
     public void start(Stage stage) throws IOException {
-        Scene scene = new Scene(new BorderPane(), 640,480);
-        stage.setScene(scene);
+        BorderPane borderPane = new BorderPane();
+
+        Launcher launcher = new Launcher(stage, borderPane);
+
+        launcher.preRun();
+        launcher.run();
+
         stage.show();
     }
 

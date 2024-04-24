@@ -1,0 +1,37 @@
+{
+  "menus": [
+    {
+      "id": "0",
+      "name": "MAIN_MENU",
+      "options": [
+        {
+          "id": 0,
+          "name": "opcion0",
+          "text": "Options",
+          "from_menu_id": 0,
+          "to_menu_id": 1
+        },
+        {
+          "id": 2,
+          "name": "opcion1",
+          "text": "Salir",
+          "from_id": 0,
+          "to_id": -1
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "OPTIONS_MENU",
+      "options": [
+        {
+          "id": 0,
+          "name": "opcion0",
+          "text": "Volver",
+          "from_menu_id": 1,
+          "to_menu_id": 0
+        }
+      ]
+    }
+  ]
+}

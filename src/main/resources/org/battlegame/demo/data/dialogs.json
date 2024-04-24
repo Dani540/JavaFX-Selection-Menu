@@ -1,0 +1,32 @@
+{
+  "dialogs": [
+    {
+      "id": "0",
+      "character_id": "0",
+      "dialogs": [
+        {
+          "id": 0,
+          "text": "Hola, soy un texto de dialogo"
+        },
+        {
+          "id": 1,
+          "text": "Hola, soy otro texto de dialogo"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "character_id": "1",
+      "dialogs": [
+        {
+          "id": 0,
+          "text": "Hola, soy un texto de dialogo"
+        },
+        {
+          "id": 1,
+          "text": "Hola, soy otro texto de dialogo"
+        }
+      ]
+    }
+  ]
+}
